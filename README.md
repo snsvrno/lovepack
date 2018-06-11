@@ -1,0 +1,1 @@
+using [Trust Templates](https://github.com/japaric/trust) for automatic testing and deploying.
