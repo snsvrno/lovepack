@@ -24,7 +24,7 @@ main() {
     cp target/$TARGET/release/lovepack $stage/
 
     cd $stage
-    tar czf $src/$CRATE_NAME-$TRAVIS_TAG-$TARGET.tar.gz *
+    tar czf $src/$CRATE_NAME-$TRAVIS_TAG-$TRAVIS_OS_NAME-x86_64.tar.gz *
     cd $src
 
     rm -rf $stage
