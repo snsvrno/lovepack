@@ -1,0 +1,12 @@
+[package]
+name = "lovepack"
+version = "0.1.0"
+authors = ["snsvrno <snsvrno@tuta.io>"]
+
+[dependencies]
+ansi_term = "0.10.2"
+clap = "2.29.1"
+
+lpsettings = { git = "https://github.com/snsvrno/lpsettings-rs", tag = "0.1.7" }
+lprun = { git = "https://github.com/snsvrno/lprun-rs", tag = "0.1.0" }
+lmake = { git = "https://github.com/snsvrno/lmake-rs", tag = "0.1.2" }
