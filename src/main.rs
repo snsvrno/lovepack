@@ -9,7 +9,7 @@ extern crate lprun;
 extern crate updater_lp;
 
 // upstream for the repository, used as the source of the releases
-static UPDATER_URL : &str = "https://github.com/snsvrno/lpsettings-rs";
+static UPDATER_URL : &str = "https://github.com/snsvrno/lovepack";
 
 fn main() {  
   // builds the app
