@@ -43,6 +43,7 @@ before_install:
   - curl -LSfs -o ci/before_deploy.sh $SCRIPT_UPSTREAM$SCRIPT_VER/before_deploy.sh
   # runs in the before_install to finish this section
   - sh ci/before_install.sh
+
 install:
   - sh ci/install.sh
   - source ~/.cargo/env || true
@@ -70,7 +71,7 @@ deploy:
     # and nightly channels. This condition makes sure there is only one release
     # for such targets and that's generated using the stable channel
     condition: $TRAVIS_RUST_VERSION = stable
-    tags: true
+    # tags: true
   provider: releases
   skip_cleanup: true
 
@@ -83,6 +84,7 @@ branches:
   only:
     # release tags
     - /^v\d+\.\d+\.\d+.*$/
+    # remove this one
     - master
 
 notifications:
