@@ -87,7 +87,7 @@ branches:
     # release tags
     - /^v\d+\.\d+\.\d+.*$/
     # remove this one
-    - master
+    # - master
 
 notifications:
   email:
